@@ -24,7 +24,7 @@
       align-items: center;
     }
    .header_title{
-      margin-left: 30px;
+      margin-left: 18px;
       color: aliceblue;
       margin-top: 5px;
     }
@@ -64,6 +64,11 @@
       .testimonial-item{
         text-align: center;
       }
+      @media (max-width:480px)  {
+        #lastname_box{
+          margin-top: 20px;
+        }
+      }
   </style>
 </head>
 
@@ -93,10 +98,10 @@
         <h1 class="bold_text"><b>What is your Name?</b></h1>
         <hr class="mt-4">
         <div class="input_container row ">
-          <div class="form_group col-lg-6">
+          <div class="form_group col-lg-6 col-12 col-sm-6">
             <input type="text" name="firstname" class="form_control col-lg-12" placeholder="First Name" />
           </div>
-          <div class="form_group col-lg-6">
+          <div class="form_group col-lg-6 col-12 col-sm-6" id="lastname_box">
             <input type="text" name="lastname" class="form_control col-lg-12" placeholder="Last Name" />
           </div>
         </div>  
@@ -138,10 +143,9 @@
   <!-- /.container -->
 
 
-
   <!-- Footer -->
   <footer class="py-4 fixed-bottom" style="background:#292f35">
-    <div class="container" style=" display: flex;flex-direction: column;font-size: 10px; ">
+    <div  style=" display: flex;flex-direction: column;font-size: 10px;margin-left: 18px; ">
       <span class="text-left text-white">© Copyright 2020 RealFin Capital, LLC. All Rights Reserved</span>
       <span class="text-left text-white">1707 1/2 Post Oak Blvd #270</span>
       <span class="text-left text-white">Houston, TX 77056</span>
